@@ -1,0 +1,65 @@
+{
+  "name": "use-pdf-renderer",
+  "version": "1.0.0",
+  "description": "React hook for rendering PDF files as images",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "npm run build",
+    "test": "jest",
+    "lint": "eslint src/**/*.{ts,tsx}",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "pdfjs-dist": "^4.10.38"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/pdfjs-dist": "^2.10.377",
+    "@types/react": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.0",
+    "eslint-plugin-react": "^7.0.0",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "pdfjs-dist": "^4.10.38",
+    "react": "^18.0.0",
+    "rollup": "^3.0.0",
+    "typescript": "^4.9.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/jest-dom": "^6.0.0",
+    "jest": "^29.0.0",
+    "jest-environment-jsdom": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "tslib": "^2.6.0"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "pdf",
+    "renderer",
+    "pdf-renderer",
+    "image",
+    "converter"
+  ],
+  "author": "Oumar Mimouni",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omimouni/use-pdf-renderer"
+  },
+  "bugs": {
+    "url": "https://github.com/omimouni/use-pdf-renderer/issues"
+  },
+  "homepage": "https://github.com/omimouni/use-pdf-renderer#readme",
+  "type": "commonjs"
+}
